@@ -24,6 +24,8 @@ const resolvers = {
 
 				const enhancedText = completion.choices[0].message.content.trim();
 
+				console.log("enhancedText", enhancedText);
+
 				return { result: enhancedText };
 			} catch (error) {
 				console.error("Error:", error);
